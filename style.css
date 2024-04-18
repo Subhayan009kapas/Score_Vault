@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&display=swap');
+
+
+:root{
+          --green:#27ae60;
+          --black:#192a56;
+          --light-color:#666;
+          --box-shadow:0.5rem  1.5rem rgba(0,0,0,.1) ;
+}
+
+*{
+          font-family: 'Nunito' , sans-serif;
+          margin: 0; padding: 0;
+          box-sizing: border-box;
+          text-decoration: none;
+          outline:none; border:none;
+          text-transform: capitalize;
+          transition: all .2s linear;
+
+}
+
+html{
+          font-size: 62.5%;
+
+          /* overflow: hidden; */
+          scroll-padding-top: 5.5rem; 
+           scroll-behavior: smooth;
+
+
+} 
+
+section{
+      padding: 10rem 9%;
+}
+
+section:nth-child(even){
+      background: #eee;
+}
+/* header{ 
+          position: fixed;
+          top: 90; left:0;right:0;
+          background: #fff;
+          padding: 1rem  7%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          z-index: 1000;
+         
+          box-shadow: var(--box-shadow);
+}
+header  .logo{
+          color: var(--black);
+          font-size: 2.5rem;
+          font-weight: bolder;
+}
+
+header  .logo  i{
+          color: var(--green);
+          
+}
+
+header  .navbar  a{
+          font-size: 1.9rem;
+          border-radius: .9rem;
+          padding: 2rem 2rem;
+          color: var(--black);
+          position: relative;
+          right:10px;
+
+}
+
+header  .navbar  a.active,
+header  .navbar  a:hover{
+          color: #fff;
+          background: var(--green);
+}
+
+header  .icons  i,
+header  .icons  a{
+          cursor: pointer;
+          margin-left: 4rem;
+          height: 5.5rem;
+          line-height: 8.rem;
+          width: 6.9rem;
+          text-align: center;
+          font-size: 1.7rem;    
+          color: var(--black);  
+          border-radius: 40%;
+          background: #eee;
+    }
+
+    header  .icons  i:hover,
+    header  .icons  a:hover{
+          color: #fff;
+          background: var(--green);
+
+          /*  to rotate the icons  we are using*/
+          /* transform: rotate(360deg);    */
+    /* }
+    header  .icons  #menu-bars{
+          display: none;
+    } */ */
+.nav{
+height: 40px;
+width: 1200px;
+background-color: #952c2c;
+color: #192a56;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+    .home  .home-slider  .slide{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2reem;
+      padding-top: 9rem;
+    }
+
+    .home  .home-slider  .slide  .content{
+      flex: 1 1 45rem;
+    }
+    .home  .home-slider  .slide  .image{
+      flex: 1 1 45rem;
+    }
+    .home  .home-slider  .slide  .image  img{
+      width:100%;
+
+    }
+    .home  .home-slider  .slide  .content span{
+      color: var(--green);
+      font-size: 2.5rem;
+
+    }
+
+    .home  .home-slider  .slide  .content h3{
+      color: var(--black);
+      font-size: 7rem;
+      
+    }
+
+    .home  .home-slider  .slide  .content p{
+      color: var(--light-color);
+      font-size: 2.2rem;
+      padding: 5rem 0;
+      line-height: 1.5;
+      
+    }
+
+    /* imported start */
+          #myDIV {
+            animation: mymove 1.75s infinite;
+          }
+          @keyframes mymove {
+            50% {text-shadow: 0px -2px 20px yellow ;}
+          }
+          
+          
+          /* Slideshow container */
+          .slideshow-container {
+            max-width: 1500px;
+            position: relative;
+            margin: auto;
+          } 
+          
+          /* Caption text */
+          .text {
+            color: #e5eae6;
+          Text-shadow: 2px 2px 10px black;
+            font-size: 50px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+          } 
+          
+          /* Number text (1/3 etc)  */
+          .numbertext {
+            color: black;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+          
+            top: 0;
+          }
+          
+          /* The dots/bullets/indicators */
+          .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+          
+          .active {
+            background-color:#4CAF50;
+          }
+          
+          /* Fading animation */
+          .fade {
+            animation-name: fade;
+            animation-duration: 2s;
+          }
+          
+          @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+          
+          }
+          
+         
+
+
+
+    /* imported last */
+
+
+/* for button */
+button{
+  background-color:#e5eae6;
+  border:none;
+  position: absolute;
+  transform: translate(-50%,  -50%);
+  top:50%;
+  left :50%;
+  padding :20px 50px;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+
+ 
+/* about start */
+
+
+about .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:2rem;
+}
+
+
+.about .row .content{
+  flex:1 1 45rem;
+}
+
+.about .row .content h3{
+  color: var(--black);
+  text-shadow: var(--text-shadow);
+  font-size: 4rem;
+  line-height: 1.8;
+}
+
+.about .row .content p{
+  color: var(--light-color);
+  padding:1rem 0;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .5rem;
+  padding-left: 1rem;
+  border:2px solid black;
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  color:var(--green);
+  cursor: pointer;
+  font-size: 1.7rem;
+  background-color: #021c55;
+  /* background: #201515; */
+}
+
+.btn span{
+  padding:.7rem 1rem;
+  border-radius: .10rem;
+  background:#021c55;
+  color:#fff;
+  margin-left: .5rem;
+}
+
+.btn:hover{
+  background-color: #021c55;
+  color:#fff;
+}
+
+.btn:hover span{
+  color:#021c55;
+  background:#021c55;
+  margin-left: 1rem;
+}
+
+
+
+
+/* about end */
+  
+/* glow effect start */
+.glow {
+  font-size: 80px;
+  color: #e82626;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px  #CADCFC, 0 0 40px  #CADCFC, 0 0 40px  #CADCFC, 0 0 40px  #CADCFC, 0 0 40px  #CADCFC, 0 0 40px  #CADCFC, 0 0 40px#e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px  #CADCFC, 0 0 30px  #CADCFC, 0 0 30px  #CADCFC, 0 0 30px  #CADCFC, 0 0 30px  #CADCFC, 0 0 30px  #CADCFC, 0 0 30px #CADCFC, 0 0 30px
+  }
+}
+/* glow effect end */
+
+/* blogs section start  */
+
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap:2rem;
+}
+
+.blogs .box-container .box{
+  border:var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: .5rem;
+  padding: 2rem;
+}
+
+.blogs .box-container .box .image{
+  height: 20rem;
+  overflow:hidden;
+  border-radius: .5rem;
+}
+
+.blogs .box-container .box .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blogs .box-container .box:hover .image img{
+  transform:scale(1.2);
+}
+
+.blogs .box-container .box .content{
+  padding-top: 1rem;
+}
+
+.blogs .box-container .box .content .icon{
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blogs .box-container .box .content .icon a{
+  font-size: 1.4rem;
+  color: var(--light-color);
+}
+
+.blogs .box-container .box .content .icon a:hover{
+  color:var(--green);
+}
+
+.blogs .box-container .box .content .icon a i{
+  padding-right: .5rem;
+  color: var(--green);
+}
+
+.blogs .box-container .box .content h3{
+  color:var(--black);
+  font-size: 3rem;
+}
+
+.blogs .box-container .box .content p{
+  color:var(--light-color);
+  font-size: 1.5rem;
+  line-height: 1.8;
+  padding:1rem 0;
+}
+/* blogs section ends  */
+
+/* review start */
+
+
+/* review end */
+
+
+/* restaurant er jonno suru  */
+
+
+
+.sub-heading{                    
+  text-align: center;
+  color:rgb(21, 255, 0);
+  font-size: 2rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+.heading{                   
+  text-align: center;
+  color:black;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.dishes.box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
+  gap: 1.5rem;
+}
+.dishes.box-container.box{
+ padding:2.5rem;
+ background:#fff;
+ border-radius:.5rem;
+ border:.1rem solid rgba(0,0,0,.2);
+ box-shadow:var(--box-shadow);
+ position:relative;
+ overflow:hidden;
+ text-align:center;
+
+}
+
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap:2rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  color:#11224D;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.5rem;
+  color:#11224D;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+  padding-right: .5rem;
+  color:var(--green);
+}
+
+.footer .box-container .box a:hover i{
+  padding-right:2rem;
+}
+
+.footer .credit{
+  padding: 1rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color:white;
+  border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+  color:var(--green);
+}
+
+
+.form{
+  height: 800px;
+  width: 500px;
+  
+  font-size: 30px;
+
+}
+.one{
+  margin-left: 850px;
+  height: 800px;
+  width: 500px;
+  
+  
+}
+.first{
+  font-size:30px;
+}
+.one-four{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  right: 150px;
+  font-size: 30px;
+}
+.five-eight{
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  right: 150px;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*   media  queries */
+ @media (max-width:991px){
+
+          html{
+                    font-size: 55%;
+          }
+          header{
+                    padding: 1rem 2rem;
+          }
+ }
+
+ @media (max-width:768px){
+
+          header  .icons  #menu-bars{
+                    display: inline-block;
+              }
+
+          header  .navbar{
+                    position: absolute;
+                    top: 100%; left: 0; right: 0;
+                    background: #fff;
+                    border-top: .1rem solid rgba(0,0,0,.2);
+                    border-bottom: .1rem solid rgba(0,0,0,.2);
+                    padding: 1rem;
+                    clip-path:  polygon(0 0, 100% 0, 100% 0,0 0);
+
+          }
+
+          header  .navbar .active{
+                    clip-path:  polygon(0 0, 100% 0, 100%  100%,0%  100%);
+
+          }
+
+
+
+          header  .navbar  a{
+                    display: block;
+                    padding: 1.5rem;
+                    margin: 1rem;
+                    font-size: 2rem;
+                    background: #ddd6d6;
+          }
+          
+
+ }
+
+ @media (max-width:991px){
+
+          html{
+                    font-size: 50%;
+         
+ }
+}
+ 
+
+
+
+
+    
+
+
+
+
